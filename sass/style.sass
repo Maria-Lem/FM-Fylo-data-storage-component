@@ -7,13 +7,15 @@ $veryDarkBlue: hsl(229, 57%, 11%)
   0%
     width: 0
   100%
-    width: 81.5%
+    width: 75%
+    
 *, *::before, *::after
   box-sizing: border-box
 body
   padding: 0
   margin: 0
   font-family: 'Raleway', sans-serif
+  font-size: 14px
   height: 100vh
   background: $veryDarkBlue url('../images/bg-desktop.png') no-repeat bottom / contain
   background-size: 100% 50%
@@ -21,16 +23,18 @@ body
   height: 100vh
   display: flex
   align-items: center
-  justify-content: center
+  justify-content: space-evenly
 .container
   display: flex
   align-items: flex-end
-  max-width: 1000px
+  max-width: 920px
   width: 98%
 .attribution
   position: fixed
   bottom: 0
-  left: 40%
+  left: 0
+  right: 0
+  text-align: center
   padding: 20px
   font-size: 14px
   &__link
@@ -55,9 +59,9 @@ body
     border-radius: 10px
     padding: 40px
   &-logo
-    padding-right: 100px
+    padding-right: 120px
     border-top-right-radius: 100px
-    margin-right: 40px
+    margin-right: 30px
   &-storage
     position: relative
 .logo
@@ -75,12 +79,12 @@ body
   &__icon
 .message
   position: absolute
-  top: -50px
+  bottom: 143px
   right: 40px
   display: flex
   align-items: center
   font-size: 12px
-  padding: 10px 20px
+  padding: 10px 30px
   border-radius: 10px
   border-bottom-right-radius: 0
   text-transform: uppercase
@@ -101,7 +105,7 @@ body
     border-top: 10px solid #fff
     border-bottom: 10px solid transparent
     right: 0px
-    top: 67px
+    top: 65px
 .text
   color: $grayishBlue
 .amount, .text__selection
@@ -110,6 +114,7 @@ body
 .amount
   display: flex
   justify-content: space-between
+  font-size: 12px
 .progress
   display: flex
   justify-content: flex-start
@@ -118,20 +123,64 @@ body
   border-radius: 100px
   padding: 0 4px
   margin-bottom: 10px
-  height: 30px
-  width: 550px
+  height: 20px
+  width: 460px
   &__value
     animation: load 5s normal forwards
     display: flex
     align-items: center
     justify-content: flex-end
     background: linear-gradient(to right, #ffa399, #ff4d97)
-    height: 22px
-    width: 81.5%
+    height: 12px
+    width: 75%
     border-radius: 100px
     &::after
       content: ''
       background: #fff
-      width: 20px
-      height: 20px
+      width: 12px
+      height: 12px
       border-radius: 50%
+
+@media screen and ( max-width: 992px )
+  body
+    background: $veryDarkBlue url('../images/bg-mobile.png') no-repeat center / cover
+  .container
+    flex-direction: column
+    align-items: center
+  .card
+    &-logo
+      margin-bottom: 40px
+  .message
+    bottom: -35px
+    right: 190px
+    border-radius: 10px
+    &::after
+      display: none
+@media screen and ( max-width: 578px )
+  .hero
+    justify-content: center
+    align-content: space-between
+  .container
+    height: 100vh
+  .card
+    &-logo, &-storage
+      max-width: 500px
+      width: 90%
+      margin-left: auto
+      margin-right: auto
+      padding: 36px
+    &-logo
+      margin-top: 130px
+      margin-bottom: 15px
+    &-storage
+      padding-bottom: 53px
+  .progress
+    max-width: 450px
+    width: 98%
+  .text
+    margin-top: 0
+    text-align: center
+  .message
+    right: 75px
+  .attribution
+    font-size: 10px
