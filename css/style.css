@@ -61,6 +61,7 @@ body {
   left: 0;
   right: 0;
   text-align: center;
+  color: #3fafdb;
   padding: 20px;
   font-size: 14px;
 }
@@ -70,7 +71,8 @@ body {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
   text-decoration: none;
-  color: #3e52a3;
+  font-weight: bold;
+  color: #3fafdb;
 }
 
 .attribution__link::after {
@@ -84,7 +86,7 @@ body {
 }
 
 .attribution__link:hover {
-  color: #dddbff;
+  color: #fff;
 }
 
 .attribution__link:hover::after {
@@ -125,6 +127,7 @@ body {
   background-color: #0c122c;
   padding: 13px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .block-icons {
