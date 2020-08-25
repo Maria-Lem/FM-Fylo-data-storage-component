@@ -14,6 +14,6 @@ The challenge was to build out this data storage component, get it looking as cl
 
 I used HTML & SASS to create this webpage.
 
-You can check out [my solution](https://fm-fylo-data-storage-component-oyeseyfdi.vercel.app/)
+You can check out [my solution](https://www.frontendmentor.io/solutions/fylo-data-storage-using-flexbox-and-sass-sIyG6Mpsq)
 
-OR [view demo](https://www.frontendmentor.io/solutions/fylo-data-storage-using-flexbox-and-sass-sIyG6Mpsq)
+OR [view demo](https://fm-fylo-data-storage-component-9222fjdyg.vercel.app/)
